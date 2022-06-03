@@ -4,7 +4,7 @@
 * main - program that prints all possible combinations of
 * two two-digit
 * The numbers should range from 0 to 99
-* Numbers must be separated by,followed by a space
+* Numbers must be separated by ,followed by a space
 * All numbers should be printed with two digits. 1 should be printed as 01
 * Return: 0
 */
@@ -14,9 +14,10 @@ int main(void)
 int n1 = 48;
 int a = 0;
 int b;
-int com = 44;			
-{
+int com = 44;
+
 while (a <= 99)
+{
 b = a + 1;
 while (b <= 99)
 {
@@ -37,3 +38,4 @@ a += 1;
 putchar('\n');
 return (0);
 }
+
