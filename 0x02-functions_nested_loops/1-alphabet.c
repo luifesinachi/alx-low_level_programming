@@ -1,20 +1,20 @@
-#include <studio.h>
+nclude "main.h"
+
 /**
- * main - functions that print alphabet
- *
- * return: always 0.
- *
+ * print_alphabet - function that prints the alphabet, lowercase
+ * You can only use _putchar twice in your code
+ * Return: nothing.
  */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
-	int n=a;
-	print_alphabet(void);
-	while (n<z);
+	int l = 'a';
+
+	while (l <= 'z')
 	{
-		_putchar(print_alphabet [n]);
-		n +=a;
+		_putchar(l);
+		l += 1;
 	}
-	_putchar('\n');
-	return(0);
+	_putchar(10);
 }
+

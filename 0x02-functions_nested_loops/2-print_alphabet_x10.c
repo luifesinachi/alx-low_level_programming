@@ -1,4 +1,4 @@
-#include <studio.h>
+#include "main.h"
 /**
  * main- functions that print alphabet_10x
  * only use _putchar twice
