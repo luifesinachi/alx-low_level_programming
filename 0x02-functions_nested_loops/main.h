@@ -1,18 +1,22 @@
-#include "holberton.h" 
-  
- /** 
-  *   * main - check the code for Holberton School students. 
-  *    * 
-  *     * Return: Always 0. 
-  *      */ 
- int main(void) 
-	 { 
-		          int r; 
-		    
-		           print_last_digit(98); 
-		            print_last_digit(0); 
-		             r = print_last_digit(-1024); 
-		              _putchar('0' + r); 
-		               _putchar('\n'); 
-		                return (0); 
-			}
+#include <studio.h>
+#include "main.h"
+
+/**
+* main - program that prints "_putchar" followed by a new line.
+*
+* Return: always 0.
+*/
+ 
+int main(void) 
+{
+_putchar('p');
+_putchar('u'); 
+_putchar('t'); 
+_putchar('c');
+_putchar('h');
+_putchar('a');	      
+_putchar('r'); 
+_putchar('\n');
+
+return (0); 
+}
