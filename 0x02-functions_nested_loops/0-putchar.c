@@ -1,22 +1,23 @@
-#include "main.h"
+#include "main.h"
 
 /** 
-* main - Entry point
-* Return: always 0.
+* main - entry point 
+* Description: Print _putchar.
+* 
+* Return: always 0 
 */ 
-
+  
 int main(void) 
 { 
-
-char c[10] = "_putchar"; 
 int i = 0; 
-while (i < 9) 
-
+char c;		    
+char s[] = "_putchar\n"; 
+		     
+while (i <= 9) 
 { 
-_putchar(c[i]); 
-i++;
+c = s[i]; 
+_putchar(c); 
+i++; 
 } 
-
-_putchar('\n'); 
 return (0); 
 }
