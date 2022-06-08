@@ -1,10 +1,8 @@
 #include "main.h"
-
 /** 
 * main - Entry point
-* Return:0 
+* Return:0
 */ 
-  
 int main(void) 
 { 
 char c[10] = "_putchar"; 
@@ -14,6 +12,6 @@ while (i < 9)
 _putchar(c[i]); 
 i++;
 } 
- _putchar('\n'); 
+_putchar('\n'); 
 return (0); 
 }
