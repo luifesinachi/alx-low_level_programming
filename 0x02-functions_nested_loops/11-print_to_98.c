@@ -1,28 +1,11 @@
-#include <studio.h>
+#include "main.h"
 
 /**
-* print_to_98 - prints all natural numbers from n to 98
-* @n: input number to check
-* Return: nothing.
+* main - check the code for Holberton School students
+*
+* Return: Always 0.
 */
-
-void print_to_98(int n)
+int main(void)
 {
-if (n < 98)
-{
-for (; n < 98; n++)
-{
-printf("%d, ", n);
-}
-}
-else if (n > 98)
-{
-for (; n > 98; n--)
-{
-printf("%d, ", n);
-}
-}
-if (n == 98)
-{
-printf("%d\n", n);
-}
+print_to_98(98);
+return (0);
