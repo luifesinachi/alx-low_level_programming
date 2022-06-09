@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* print_numbers - function that prints the numbers, from 0 to 9.
+* main - check the code
 *
-* Return: nothing.
+* Return: always 0.
 */
 
 void print_numbers(void)
@@ -16,4 +16,5 @@ _putchar(n + '0');
 n += 1;
 }
 _putchar('\n');
+return (0);
 }
