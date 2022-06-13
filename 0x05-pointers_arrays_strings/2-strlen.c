@@ -12,7 +12,7 @@ int main (void)
 char str[50];
 int len;
 
-str = "My first strlen!";
+str = "strings";
 
 len = strlen(str);
 printf("Length of |%s| is |%d|\n", str, len);
