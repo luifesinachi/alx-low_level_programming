@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <string.h>
 /** 
 * _strlen - Returns the length of a string
 * @str: The string to get the length of. 
@@ -12,7 +12,7 @@ int main (void)
 char str[50];
 int len;
 
-strcpy(str, "This is tutorialspoint.com");
+str = "My first strlen!";
 
 len = strlen(str);
 printf("Length of |%s| is |%d|\n", str, len);
