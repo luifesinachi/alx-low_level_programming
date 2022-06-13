@@ -1,5 +1,5 @@
 #include "main.h"
-#include <studio.h>
+#include <stdio.h>
 
 /** 
 * _strlen - Returns the length of a string
@@ -7,7 +7,7 @@
 * 
 * Return: 0.
 */
-int main () 
+int main (void)	
 {
 char str[50];
 int len;
