@@ -12,7 +12,7 @@ int main (void)
 char str[50];
 int len;
 
-printf("Length of |%s| is |%d|\n", str, len);
+printf("Length of |string| is |6|\n", str, len);
 		          
 return(0);
 }
