@@ -1,36 +1,38 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
-* cap_string - function that capitalizes all words of a string.
-* @s: Pointer to Char
-* Return: char.
+* cap_string - check the code for Holberton School students.
+* @a: is a pointer type char
+* Return: Always 0.
+*
 */
 
-char *cap_string(char *)
+char *cap_string(char *a)
 {
-int i = 0;
+char separator[] = " \t\n,;.!?\"(){}";
+int i, j;
 
-while (*(s + i) != '\0')
+for (i = 0; a[i] != '\0'; i++)
 {
-if (i == 0 && (*(s + i) >= 97 && *(s + i) <= 122))
+
+if (a[i] >= 'a' && a[i] <= 'z')
 {
-*(s + i) = *(s + i) - ' ';
-i++;
-}
-if (*(s + i) == ' ' || *(s + i) == '\n' || *(s + i) == '\t'
-|| *(s + i) == ',' || *(s + i) == ';' || *(s + i) == '!'
-|| *(s + i) == '?' || *(s + i) == '"' || *(s + i) == '('
-|| *(s + i) == ')' || *(s + i) == '{' || *(s + i) == '}'
-|| *(s + i) == '.')
-{
-i++;
-if (*(s + i) >= 97 && *(s + i) <= 122)
-{
-*(s + i) = *(s + i) - ' ';
-}
-}
+
+if (i == 0)
+a[i] -= 32;
+
+
 else
-i++;
+{
+for (j = 0; separator[j] != '\0'; j++)
+{
+if (a[i - 1] == separator[j])
+a[i] -= 32;
 }
-return (s);
+}
+
+}
+}
+return (a);
 }
