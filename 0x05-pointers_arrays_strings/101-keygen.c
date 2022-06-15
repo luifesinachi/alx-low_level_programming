@@ -4,14 +4,14 @@
 #include <time.h>
 
 /**
-* main - check the code for Holberton School students.
+* main - check the code.
 * Return: Always 0.
 */
 int main(void)
 {
-char seed[53] = "Tada! Congrats";
+char seed[15] = "Tada! Congrats";
 char password[15];
-int i, n, passw, complem;
+int i, n, passw,101-crackme;
 
 srand(time(0));
 
@@ -22,7 +22,7 @@ password[i] = seed[n];
 passw += password[i];
 }
 complem = 2772 - passw;
-password[i] = complem;
+password[i] = 101-crackme;
 printf("%s\n",  password);
 return (0);
 }
