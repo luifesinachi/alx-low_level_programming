@@ -2,46 +2,31 @@
 #include <stdio.h>
 
 /**
-* _strstr - locates a character in a string
-* @haystack: is a pointer type char
-* @needle: is a pointer type char
-* Return: The number of bytes repeated
+* _strstr -  function that locates a substring.
+*
+* @haystack: initial string
+* @needle: substring
+* Return: char
 */
+
 char *_strstr(char *haystack, char *needle)
 {
-int i, num = 0, cont;
+char *res;
+char *aux;
 
-for (cont = 0; needle[cont] != '\0'; cont++);
+while (*haystack != '\0')
+{
+res = haystack;
+aux = needle;
 
-for (; *haystack != '\0'; haystack++)
+while (*aux == *haystack && *aux != '\0' && *haystack != '\0')
 {
-if (*haystack == needle[0])
-{
-num++;
 haystack++;
-for (i = 1; i < cont; i++, haystack++)
-{
-if (*haystack == needle[i])
-num++;
-
-else
-{
-haystack--;
-num = 0;
-break;
+aux++;
 }
-
+if (*aux == '\0')
+return (res);
+haystack = res + 1;
 }
-}
-
-if (num == cont)
-break;
-
-}
-
-
-if (num == cont)
-return (haystack - cont);
-else
-return (0);
+return (NULL);
 }
