@@ -1,5 +1,3 @@
-!<arch>
-*.c/            0           0     0     644     222       `
 _putchar.c
 0-isupper.c
 0-memset.c
