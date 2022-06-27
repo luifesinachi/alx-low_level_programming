@@ -79,10 +79,11 @@ strings[w] = malloc(sizeof(char) * (letters + 1));
 if (strings[w] == NULL)
 {
 for (; w >= 0; w--)
-free(strings[w];
+free(strings[w]);
 free(strings);
-return (NULL);
+return (NULL);;
 }
+
 for (l = 0; l < letters; l++)
 strings[w][l] = str[index++];
 
