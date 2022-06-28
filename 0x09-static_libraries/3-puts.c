@@ -1,3 +1,5 @@
 #include "main.h"
-_putchar
-_puts
+void _puts(char *str)
+{
+
+}

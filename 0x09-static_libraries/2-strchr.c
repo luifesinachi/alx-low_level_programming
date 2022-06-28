@@ -1,2 +1,5 @@
-#include  "main.h"
-_strchr
+#include "main.h"
+char *_strchr(char *s, char c)
+{
+
+}
