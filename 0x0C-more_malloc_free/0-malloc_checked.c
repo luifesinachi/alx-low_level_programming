@@ -2,10 +2,11 @@
 #include <stdlib.h>
 
 /*
- * malloc_check - function that allocates memory using malloc
- * @b: size of int
- * return: nothing
- */
+* malloc_check - function that allocates memory using malloc
+* @b: size of int
+* return: nothing
+*/
+
 void *malloc_check(unsigned  int b);
 {
 void *al;
