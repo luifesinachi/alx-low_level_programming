@@ -7,7 +7,7 @@
 * return: nothing
 */
 
-void *malloc_check(unsigned  int b);
+void *malloc_check(unsigned  int b)
 {
 void *mem = malloc(b);
 
