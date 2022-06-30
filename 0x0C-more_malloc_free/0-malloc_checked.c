@@ -2,18 +2,16 @@
 #include <stdlib.h>
 
 /*
-* malloc_check - function that allocates memory using malloc
-* @b: size of int
+* malloc_check - Allocates memory using malloc
+* @b: The number of bytes to be allocated
 * return: nothing
 */
 
 void *malloc_check(unsigned  int b);
 {
-void *al;
+void *mem = malloc(b);
 
-al = malloc(b);
-if (al == NULL)
+if (mem == NULL)
 exit(98);
-else
-return (al);
+return (mem);
 }
