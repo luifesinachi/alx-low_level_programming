@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
 * _print - moves a string one place to the left and prints the string
@@ -9,7 +8,7 @@
 *
 * Return: void
 */
-void _print(char *str, int l)
+void _print(char *str, int l);
 {
 int i, j;
 
@@ -59,6 +58,7 @@ return (NULL);
 }
 return (dest);
 }
+
 /**
 * check_for_digits - checks the arguments to ensure they are digits
 * @av: pointer to arguments
