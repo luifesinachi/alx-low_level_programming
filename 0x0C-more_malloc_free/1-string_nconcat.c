@@ -18,23 +18,27 @@ if (s1 == NULL)
 i = 0;
 else
 {
-for (i = 0; s1[i]; i++);
+for (i = 0; s1[i]; i++)
+;
 }
 if (s2 == NULL)
 j = 0;
 else
 {
-for (j = 0; s2[j]; j++);
+for (j = 0; s2[j]; j++)
+;
 }
 if (s2 == NULL)
 j = 0;
 else
 {
-for (j = 0; s2[j]; j++);
+for (j = 0; s2[j]; j++)
+;
 }
 if (j > n)
 j = n;
-s = malloc(sizeof(char) *(i + j + 1));
+s = malloc(sizeof(char) *(i + j + 1))
+;
 if (s == NULL)
 return (NULL);
 for (k = 0; k < i; k++)
