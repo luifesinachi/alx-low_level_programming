@@ -66,7 +66,7 @@ va_list list;
 int i, j;
 char *separator;
 
-type_t ops[] = {
+type _t ops[] = {
 {"c", print_c},
 {"i", print_i},
 {"f", print_f},
