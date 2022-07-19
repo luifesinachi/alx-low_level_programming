@@ -4,22 +4,27 @@
 #include <string.h>
 
 /**
-* free_listint2 - function that frees a listint_t list.
-* @head: header pointer
+* free_listint2 - ...
+* @head: ...
+*
+* Return: ...
 */
-
 void free_listint2(listint_t **head)
-
 {
 listint_t *temp;
-listint_t *temp2;
-
-temp2 = *head;
-while (temp2 != NULL && head != NULL)
+if (head)
 {
-temp = temp2;
-temp2 = temp2->next;
+while (*head)
+{
+temp = (*head);
+*head = (*head)->next;
 free(temp);
 }
-*head = NULL;
+}
+else
+{
+return;
+}
+free(*head);
+head = 0;
 }
