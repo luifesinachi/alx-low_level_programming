@@ -27,4 +27,3 @@ dec ^= 1;
 n++;
 }
 return (dec);
-}
